@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Shopper</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./styles/style.css">
+
+  </head>
+  <body>
+
+    <header class="header container">
+      <div class="logo">
+        <img src="./img/logo.png" alt="logo">
+      </div>
+      <div class="search">
+        <form>
+          <input type="search" name="Search-propucts"
+            placeholder="Search for Products" class="input search-input text-bold">
+            <button class="search-button button-blue ">Search</button>
+        </form>
+      </div>
+      <div class="user">
+        <div class="auth">
+          <button class="button auth-button button-white">Log in</button>
+          <button class="button auth-button button-white">Sign up</button>
+        </div>
+        <div class="user-icons">
+          <div class="like">
+            <img src="./img/shortlist icon.png" alt="like">
+          </div>
+          <div class="cart">
+            <img src="./img/Cart icon.png" alt="cart">
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="site-nav nav container">
+      <ul class="site-nav__list list">
+        <li class="site-nav__item item">
+          <a class="site-nav__link link">Home Decor</a>
+        </li>
+        <li class="site-nav__item item">
+          <a class="site-nav__link link">Furniture</a>
+        </li>
+        <li class="site-nav__item item">
+          <a class="site-nav__link link">Lighting</a>
+        </li>
+        <li class="site-nav__item item">
+          <a class="site-nav__link link">Home Accent</a>
+        </li>
+        <li class="site-nav__item item">
+          <a class="site-nav__link link">Rugs</a>
+        </li>
+        <li class="site-nav__item item">
+          <a class="site-nav__link link">Outdoors</a>
+        </li>
+        <li class="site-nav__item item">
+          <a class="site-nav__link link">Holidays</a>
+        </li>
+        <li class="site-nav__item item">
+          <a class="site-nav__link link">Gifts</a>
+        </li>
+        <li class="site-nav__item item">
+          <a class="site-nav__link link">Events</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="main ">
+      <div class="title">
+        Seller Application
+      </div>
+      <div class="app">
+        <nav class="app-nav nav container text-bold">
+          <ul class="app-nav__list list text-gray">
+            <li class="app-nav__item item">
+              <a class="app-nav__link link">Application Critaria</a>
+            </li>
+            <li class="app-nav__item item">
+              <a class="app-nav__link link">Company Profile</a>
+            </li>
+            <li class="app-nav__item item">
+              <a class="app-nav__link link">Web & Social Media</a>
+            </li>
+            <li class="app-nav__item item">
+              <a class="app-nav__link link">Contact Info</a>
+            </li>
+            <li class="app-nav__item item">
+              <a class="app-nav__link link">Confirm Account</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="app-content container">
+          <form>
+            <fieldset class="fieldset">
+              <legend class="legend">Name</legend>
+              <div class="form-wrapper"> 
+                <input type="text" name="Mr" placeholder="Mr." class="input name-input text-gray">
+                <input type="text" name="First-Name" placeholder="First Name" class="input name-input text-gray">
+                <input type="text" name="Middle-Nam" placeholder="Middle Nam" class="input name-input text-gray">
+                <input type="text" name="Last-Name" placeholder="Last Name" class="input name-input text-gray">
+              </div>
+            </fieldset>
+            <fieldset class="fieldset">
+              <legend class="legend">Title</legend>
+              <input type="text" name="Title" placeholder="eg. CEO, Owner, Manager, Designer, Merchandiser text-gray" class="input title-input">
+            </fieldset>
+            <fieldset class="fieldset">
+              <legend class="legend business-legend">Business Mailing Addres</legend>
+              <div class="form-wrapper"> 
+                <fieldset class="fieldset business-fieldset">
+                  <legend class="legend">Street Address</legend>
+                  <input type="text" name="Street-address" class="input business-input">
+                </fieldset>
+                <fieldset class="fieldset business-fieldset">
+                  <legend class="legend">Apt / Suite / Other</legend>
+                  <input type="text" name="Apt-Suite-Other" class="input business-input">
+                </fieldset>
+                <fieldset class="fieldset business-fieldset">
+                  <legend class="legend">City</legend>
+                  <input type="text" name="City" class="input business-input">
+                </fieldset>
+                <fieldset class="fieldset business-fieldset">
+                  <legend class="legend">Zip / Postal Code</legend>
+                  <input type="text" name="Zip-Postal-Code" class="input business-input">
+                </fieldset>
+                <fieldset class="fieldset business-fieldset">
+                  <legend class="legend">Country</legend>
+                  <input type="text" name="Country" placeholder="Select Country" class="input business-input">
+                </fieldset>
+                <fieldset class="fieldset business-fieldset">
+                  <legend class="legend">Phone Number</legend>
+                  <input type="number" name="Phone-number" class="input business-input"></input>
+                  <label for="Phone-number" class="phone-label text-gray">To Validate your account please enter valid mobile Number toreceive confirmation code</label>
+                </fieldset>
+              </div>
+            </fieldset>
+            <div class="app-footer">
+              <button class="button button-white">Go Back</button>
+              <span class="text-gray">By Submitthing this application, you agree to the</span>
+              <button class="button button-blue">Submit Application</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-wrapper">
+        <div>
+          <div class="footer-header">How We Help</div>
+          <ul class="site-map list">
+            <li class="site-map__item item item">
+              <a class="site-map__link link link">Retailers</a>
+            </li>
+            <li class="site-map__item item">
+              <a class="site-map__link link">InteriorsDesigners</a>
+            </li>
+            <li class="site-map__item item">
+              <a class="site-map__link link">Product Designers</a>
+            </li>
+            <li class="site-map__item item">
+              <a class="site-map__link link">Wholesalers / Importers</a>
+            </li><li class="site-map__item item">
+              <a class="site-map__link link">Artisans</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-header">Get to Know Us</div>
+          <ul class="site-map list">
+            <li class="site-map__item item">
+              <a class="site-map__link link">About</a>
+            </li>
+            <li class="site-map__item item">
+              <a class="site-map__link link">Policies</a>
+            </li>
+            <li class="site-map__item item">
+              <a class="site-map__link link">Careers</a>
+            </li>
+            <li class="site-map__item item">
+              <a class="site-map__link link">Press</a>
+            </li>
+          </ul>
+      </div>
+        <div>
+          <div class="footer-header">Join the Community</div>
+          <ul class="site-map list">
+            <li class="site-map__item item">
+              <a class="site-map__link link">Upcoming Events</a>
+            </li>
+            <li class="site-map__item item">
+              <a class="site-map__link link">Become a Buyer</a>
+            </li>
+            <li class="site-map__item item">
+              <a class="site-map__link link">Become a Seller</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-header">Follow Us</div>
+          <ul class="social list">
+            <li class="social__item item">
+              <div class="icon">
+                <img src="img/fb-icon.png" alt="facebook" >
+              </div>
+              <a class="social__link link">
+                <span class="icon icon_facebook">Facebook</span>
+              </a>
+            </li>
+            <li class="social__item item">
+              <div class="icon">
+                <img src="img/pntr-icon.png" alt="pinterest" >
+              </div>
+              <a class="social__link link">
+                <span class="icon icon_instagram">Pinterest</span>
+              </a>
+            </li>
+            <li class="social__item item">
+              <div class="icon">
+                <img src="img/twt-icon.png" alt="twitter">
+              </div>
+              <a class="social__link link">
+                <span class="icon icon_facebook">Twitter</span>
+              </a>
+          </li>
+          <li class="social__item item">
+            <div class="icon">
+              <img src="img/insta-icon.png" alt="instagram">
+            </div>
+            <a class="social__link link">
+              <span class="icon icon_instagram">Instagram</span>
+            </a>
+          </li>
+        </ul>
+        </div>
+      </div>
+      <hr class="footer-line">
+      <div class="docs">
+        <ul class="list text-gray">
+          <list class="item">
+            <a class="link">Terms & Conditions</a>
+          </list>
+          <list class="item">
+            <a class="link">Privacy</a>
+          </list>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
