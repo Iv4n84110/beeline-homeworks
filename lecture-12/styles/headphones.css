@@ -1,0 +1,20 @@
+.headphones-banner {
+  background-color: #2B2835;
+}
+
+.headphones-wrapper {
+  justify-content: flex-end;
+}
+
+.headphones-img {
+  position: absolute;
+  top:0;
+  left: -110px;
+}
+
+.headphones-info {
+  padding: 200px 0 180px;
+  width: 100%;
+  max-width: 510px;
+}
+
