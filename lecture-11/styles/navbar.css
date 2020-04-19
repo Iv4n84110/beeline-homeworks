@@ -1,0 +1,16 @@
+.site-nav {
+  padding: 14px 10%;
+  background-color: #F4F4F4;
+}
+
+.site-nav__item {
+  margin-right: 35px;
+  display: inline;
+  font-size: 15px;
+  line-height: 18px;
+  color: #737270;
+}
+
+.site-nav__item:last-child {
+  margin-right: 0;
+}

@@ -1,0 +1,48 @@
+.header {
+  font-size: 14px;
+  padding: 33px 10% 27px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: inline-block;
+  height: 23px;
+  width: 168px;
+}
+
+.search {
+  display: inline-block;
+}
+
+.search-button {
+  cursor: pointer;
+  padding: 12px 16px;
+  margin-left: -6px;
+  border-radius: 3px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.search-input {
+  width: 325px;
+}
+
+.user {
+  display: flex;
+}
+
+.auth-button {
+  margin:0 11px;
+}
+
+.user-icons{
+  display: flex;
+}
+
+.cart, .like{
+  align-self: center;
+  margin-left: 27px;
+  display: inline-block;
+}
