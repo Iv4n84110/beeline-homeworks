@@ -12,10 +12,9 @@
   justify-content: space-between;
   box-sizing: border-box;
   padding-top: 55px;
-  padding-left: 135px; /* 30 */
-  padding-right: 190px; /* 135 */
+  padding-left: 135px;
+  padding-right: 190px;
   padding-bottom: 20px;
-  
 }
 
 .footer-header {
@@ -25,11 +24,18 @@
 }
 
 .site-map {
-  color: #b1b1b1;
   line-height: 30px;
   font-weight: 400;
   font-size: 14px;
   text-transform: uppercase;
+}
+
+.social__item {
+  margin-right: 15px;
+}
+
+.site-map__link {
+  color: #b1b1b1;;
 }
 
 .social {
@@ -38,12 +44,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-
-.social__item {
-  display: flex;
-  align-items: center;
-  margin-right: 15px;
 }
 
 .copyright {
