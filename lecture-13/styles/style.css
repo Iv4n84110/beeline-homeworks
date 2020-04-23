@@ -1,0 +1,55 @@
+@import "./sidebar.css";
+@import "./content.css";
+
+body {
+  font-family: 'Arimo', sans-serif;
+  font-weight: 400;
+  color: #4A4A4A;
+  background: #F2F2F2;
+
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  height: 900px;
+  width: 1440px;
+
+  display: flex;
+  justify-content: row;
+}
+
+.text_size-m {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.text_size-s {
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.transparent {
+  opacity: 0.5;
+}
+
+.box {
+  box-sizing: border-box;
+  padding: 12px 14px;
+ }
+
+.box-white {
+  background-color: #FFFFFF;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0212249);
+  border-radius: 5px;
+}
+
+.box-blue {
+  background: rgba(0,84,254, 0.04);
+  mix-blend-mode: normal;
+  border-radius: 8px;
+}

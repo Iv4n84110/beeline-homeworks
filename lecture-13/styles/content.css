@@ -1,0 +1,215 @@
+.content {
+  padding-top: 18px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 110px;
+
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background-color: #F5F6FA;
+}
+
+.content-title {
+  margin-bottom: 16px;
+
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.objectives {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-bottom: 20px;
+}
+
+.objectives-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-width: 1130px;
+  flex-grow: 1;
+
+}
+
+.objective-box {
+  min-height: 185px;
+  min-width: 550px;
+  flex-basis: 49%;
+}
+
+.preperation {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.preperation-box {
+  min-height: 500px;
+  min-width: 1120px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.flex-box-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-basis: 78%;
+}
+
+.flex-box-right {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 17%;
+  justify-content: center;
+}
+
+.flex-box-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-basis: 48%;
+}
+
+.teams {
+  flex-basis: 24%;
+}
+
+.plan {
+  display: flex;
+  flex-basis: 74%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.plan-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.review {
+  flex-basis: 42%;
+  display: flex;
+}
+
+.tasks {
+  display: flex;
+  flex-basis: 92%;
+  flex-direction: column;
+}
+
+.step-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 11px;
+}
+
+.arrow-right {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.line {
+  width: 98%;
+  border: 2px;
+  border-bottom-style: dashed;
+  stroke-dasharray: 5;
+  border-color: rgba(74, 74, 74, 0.24);
+}
+
+.cursor {
+  position: absolute;
+  right: 0;
+  top: -2.5px;
+  z-index: 1;
+
+  width: 0;
+  height: 0;
+  border-left: 5px solid rgba(74, 74, 74, 0.24);
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+}
+
+.step {
+  width: 98px;
+  height: 158px;
+  display: flex;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-grow: 1;
+}
+
+.form-container {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.form-inner {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 0.75;
+  justify-content: space-between;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 29%;
+  justify-content: space-between;
+}
+
+.desc {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0.9;
+  justify-content: space-between;
+}
+
+.checkbox {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.checkbox+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.checkbox+label::before {
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #4A4A4A;
+  border-radius: 2px;
+  margin-right: 6px;
+}
+
+.checkbox:checked+label::before {
+  border-color: #4A4A4A;
+  background-color: #4A4A4A;
+}
+
