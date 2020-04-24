@@ -4,11 +4,13 @@ html {
 
 .content {
   margin: 0 auto;
-
+  padding-right: 20px;
+  padding-bottom: 20px;
   max-width: 640px;
   background-color: #fff;
   font-family: Roboto, sans-serif;
   text-align: left;
+  
 }
 
 .wrapper {
