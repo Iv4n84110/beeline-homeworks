@@ -1,0 +1,126 @@
+html {
+  overflow-y: scroll;
+}
+
+.content {
+  margin: 0 auto;
+
+  max-width: 640px;
+  background-color: #fff;
+  font-family: Roboto, sans-serif;
+  text-align: left;
+}
+
+.wrapper {
+  margin-left: 20px;
+}
+
+.title {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  font-size: 35px;
+  line-height: 41px;
+}
+
+#tabs__item-1:checked~#tab_01,
+#tabs__item-2:checked~#tab_02,
+#tabs__item-3:checked~#tab_03 {
+  display: block;
+}
+
+.tabs {
+  border: 1px solid rgba(0, 0, 0, 0.09);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.tabs__input[type="checkbox"] {
+  display: none;
+}
+
+.tabs__item {
+  position: relative;
+}
+
+.tabs__input[type="checkbox"]:checked+.tabs__title::before,
+.tabs__input[type="checkbox"]:not(:checked)+.tabs__title::before {
+  position: absolute;
+  content: "";
+  background-color: #0179FF;
+  width: 2px;
+  left: -12px;
+  top: 10px
+}
+
+.tabs__input[type="checkbox"]:checked+.tabs__title::before {
+  height: calc(100% - 10px) ;
+}
+
+.tabs__input[type="checkbox"]:not(:checked)+.tabs__title::before {
+  height: 55%;
+}
+
+
+.tabs__title {
+  width: 100%;
+
+  padding: 15px 35px 16px 35px;
+
+  font-size: 13px;
+  line-height: 15px;
+
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  background: #F5F5F5;
+  border: 1px solid #E8E8E8;
+  border-top: 0.5px solid #E8E8E8;
+  border-bottom: 0.5px solid #E8E8E8;
+  
+  cursor: pointer;
+}
+
+.tabs__block {
+  display: none;
+  border: 1px solid #E8E8E8;
+  border-top: none;
+  border-bottom: none;
+  padding: 10px 40px 15px 20px;
+  font-size: 16px;
+  color: #5D5D5D;
+}
+
+.tabs__block>h3{
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.tabs__block>p{
+  font-size: 13px;
+  line-height: 20px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.tabs__block>p>a{
+  color: #0179FF;
+}
+
+.tabs__block img {
+  display: block;
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+.arrow {
+  top: 18px;
+  left: 20px;
+  position: absolute;
+  width: 6px;
+  height: 10px;
+}
+
+.tabs__input[type="checkbox"]:checked+.tabs__title>.arrow {
+  transform: rotate(90deg)
+}
+
