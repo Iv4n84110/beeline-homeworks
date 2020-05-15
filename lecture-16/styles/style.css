@@ -125,6 +125,7 @@ body {
   .content {
     max-width: 900px;
   }
+}
 
   @media (min-width: 1440px) {
     .content {
