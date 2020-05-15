@@ -6,12 +6,15 @@
 
 .card-wrapper {
   justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .product {
   z-index: 0;
   position: relative;
-  width: 32%;
+  max-width: 400px; 
+  width: 100%;
 
   box-sizing: border-box;
   background-color: #F8F8F9;
@@ -38,8 +41,6 @@
 }
 
 .product-info {
-  max-width: 270px;
-
   padding-top: 335px;
   padding-bottom: 40px;
   padding-left: 30px;
