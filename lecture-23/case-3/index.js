@@ -5,7 +5,6 @@ changeBackground = ()=> {
   const colorC = 300/(window.innerHeight+window.innerWidth)*400;
 
   const color = `rgb(${colorA}, ${colorB}, ${colorC})`
-  console.log (color.toString())
   container.style.backgroundColor=color.toString();
  }
 
