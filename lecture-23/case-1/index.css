@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(15, 76, 129);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form {
+  height: 250px;
+  padding: 30px;
+  border: 3px solid;
+  border-radius: 20px;
+  border-color: rgb(188, 178, 162);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly
+}
+
+.form__button {
+  outline: none;
+  text-transform: uppercase;
+  padding: 10px;
+  border-color: rgb(188, 178, 162);
+  border: none;
+  border-radius: 5px;
+}
+
+
