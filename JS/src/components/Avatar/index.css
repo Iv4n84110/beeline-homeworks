@@ -1,0 +1,18 @@
+.avatar-wrapper {
+  padding-right: 20px;
+}
+
+.avatar {
+  display: flex;
+  background-size: 70px 70px;
+  height: 70px;
+  width: 70px;
+}
+
+.user-avatar {
+  background-image: url("./avatar-user.svg");
+}
+
+.bot-avatar {
+  background-image: url("./avatar-bot.svg");
+}
