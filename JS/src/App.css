@@ -38,6 +38,8 @@ body {
   color: #ffffff;
 }
 
+
+
 .form-wrapper {
   padding-right: 20px;
   background: #f3f3f3;
@@ -89,6 +91,7 @@ body {
 }
 
 .message-wrapper {
+  width: 100%;
   display: flex;
   flex-direction: row;
   margin-bottom: 30px;
