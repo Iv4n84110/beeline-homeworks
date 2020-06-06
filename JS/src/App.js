@@ -20,8 +20,8 @@ class App extends Component {
 
   handleSubmit(e) {
     e.preventDefault();
+    this.sendComand();
     this.bot(this.state.currentMessage);
-    this.setState({ currentMessage: "", isTyping: false });
   }
 
   handleMessageChange(e) {
@@ -31,43 +31,45 @@ class App extends Component {
   }
 
   wrongCommand() {
-    this.setState({
-      messages: [
-        {
-          message: "Я не понимаю, введите другую команду!",
-          owner: "bot",
-        },
-        { message: this.state.currentMessage, owner: "user" },
-        ...this.state.messages,
-      ],
+    this.sendResponse("Я не понимаю, введите другую команду!");
+  }
+
+  sendComand() {
+    this.setState((state) => {
+      return {
+        messages: [
+          { message: state.currentMessage, owner: "user" },
+          ...state.messages,
+        ],
+        currentMessage: "",
+        isTyping: false,
+      };
+    });
+  }
+
+  sendResponse(response) {
+    this.setState((state) => {
+      return {
+        messages: [
+          {
+            message: response,
+            owner: "bot",
+          },
+          ...state.messages,
+        ],
+      };
     });
   }
 
   bot(message) {
     if (!this.state.isStarted) {
       if (message === "/start") {
+        this.sendResponse("Привет, меня зовут Чат-бот, а как зовут тебя?");
         this.setState({
-          messages: [
-            {
-              message: "Привет, меня зовут Чат-бот, а как зовут тебя?",
-              owner: "bot",
-            },
-            { message: this.state.currentMessage, owner: "user" },
-            ...this.state.messages,
-          ],
           isStarted: true,
         });
       } else {
-        this.setState({
-          messages: [
-            {
-              message: "Введите команду /start, для начала общения",
-              owner: "bot",
-            },
-            { message: this.state.currentMessage, owner: "user" },
-            ...this.state.messages,
-          ],
-        });
+        this.sendResponse("Введите команду /start, для начала общения");
       }
     } else {
       let commandEnd = message.indexOf(" ");
@@ -77,16 +79,9 @@ class App extends Component {
         case "/name:":
           let name = message.slice(commandEnd).trim();
           if (name) {
-            this.setState({
-              messages: [
-                {
-                  message: `Привет ${name}, приятно познакомится. Я умею считать, введи числа которые надо посчитать`,
-                  owner: "bot",
-                },
-                { message: this.state.currentMessage, owner: "user" },
-                ...this.state.messages,
-              ],
-            });
+            this.sendResponse(
+              `Привет ${name}, приятно познакомится. Я умею считать, введи числа которые надо посчитать`
+            );
           } else {
             this.wrongCommand();
           }

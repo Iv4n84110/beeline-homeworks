@@ -6,7 +6,7 @@ import "./index.css";
 const Message = (props) => (
   <div className="message-wrapper">
     <Avatar by={props.by} />
-    <p className={"message " + props.by + "-message"}>{props.text}</p>
+    <div className={"message " + props.by + "-message"}>{props.text}</div>
   </div>
 );
 
