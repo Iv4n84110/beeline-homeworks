@@ -4,6 +4,8 @@ const checkboxes = document.getElementsByClassName('checkbox');
 const inputsArr = Array.from(inputs);
 const checkboxesArr = Array.from(checkboxes);
 
+//Задание 1
+
 function setCookie(name, value, options = {}) {
     options = {
         path: '/',
@@ -34,7 +36,6 @@ saveInCookies = (e) => {
     e.preventDefault()
     inputsArr.forEach(input => {
         setCookie(input.name, input.value)
-       // console.log(getCookie(input.name))
     });
     checkboxesArr.forEach(checkbox => {
         if (checkbox.checked) {
@@ -45,7 +46,7 @@ saveInCookies = (e) => {
         }
     });
 }
-
+/* Функция для восстановления данных пользователя, используя куки
 document.addEventListener("DOMContentLoaded", () => {
     inputsArr.forEach(input => {
         if(getCookie(input.name)){
@@ -56,4 +57,44 @@ document.addEventListener("DOMContentLoaded", () => {
         checkbox.checked = getCookie(checkbox.name)
     } )
 });
+*/
 
+//Задание 2
+
+saveInLocalStorage = (e) => {
+    e.preventDefault()
+    let saved = {}
+    inputsArr.forEach(input => {
+        saved = {
+            ...saved,
+            [input.name]: input.value
+        }
+    })
+
+    checkboxesArr.forEach(checkbox => {
+        if (checkbox.checked) {
+            saved = {
+                ...saved,
+                [checkbox.name]: 'checked'
+            }
+        } else {
+            saved = {
+                ...saved,
+                [checkbox.name]: ''
+            }
+        }
+    })
+    localStorage.data = JSON.stringify(saved);
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    if(localStorage.data){
+        let data = JSON.parse( localStorage.data)
+        inputsArr.forEach(input => {
+            input.value = data[input.name];
+        })
+        checkboxesArr.forEach(checkbox =>{
+            checkbox.checked = data[checkbox.name]
+        })
+    }
+});
