@@ -1,0 +1,21 @@
+.sidebar {
+  padding-left: 20px;
+  padding-right: 40px;
+  background-color: #ffffff;
+
+  
+  display: flex;
+  flex-basis: 255px;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.sidebar-header {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.sidebar-box {
+  min-height: 164px;
+  min-width: 195px;
+}
