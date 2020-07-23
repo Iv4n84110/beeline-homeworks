@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>Cookie/localStorage</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="index.css" rel="stylesheet">
+</head>
+<body>
+  <main>
+    <form action="" id="form" class="form">
+      <fieldset class="text-group fieldset">
+        <label for="name">Твое имя</label>
+        <input type="text" id="name" name="name" class="input">
+        <label for="card">Номер карты твоих родителей</label>
+        <input type="number" id="card" name="card" class="input">
+        <label for="cvc">Цифры на обратной стороне карты</label>
+        <input type="number" id="cvc" name="cvc" class="input">
+      </fieldset>
+
+      <fieldset class="checkbox-group fieldset">
+        <legend>Кого бы ты хотел(а) завести дома?</legend>
+        <input type="checkbox" id="cat" name="cat" class="checkbox">
+        <label for="cat">Кошечку</label>
+        <input type="checkbox" id="parrot" name="parrot" class="checkbox">
+        <label for="parrot">Попуга</label>
+        <input type="checkbox" id="spider" name="spider" class="checkbox">
+        <label for="spider">Павука</label>
+        <input type="checkbox" id="raccoon" name="raccoon" class="checkbox">
+        <label for="raccoon">Енотика</label>
+      </fieldset>
+
+      <input type="submit" value="Сохранить" onclick="saveInLocalStorage(event)" class="button">
+
+    </form>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
