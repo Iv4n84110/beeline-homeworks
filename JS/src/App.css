@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+html {
+  font-family: "Halant", sans-serif;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background: #282828;
+}
+
+.app {
+  margin: 0 auto;
+  max-width: 770px;
+}
+
+.app__title {
+  margin: 0;
+  padding: 7px 20px 22px;
+  font-family: "Halant", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 50px;
+
+  color: #ffffff;
+}
+
+
+
+.form-wrapper {
+  padding-right: 20px;
+  background: #f3f3f3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.input-text {
+  box-sizing: border-box;
+  width: 100%;
+  height: 55px;
+  padding: 0 20px;
+
+  border: none;
+  outline: none;
+  background: #f3f3f3;
+
+  font-family: "Abel", sans-serif;
+  color: #929292;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.submit {
+  background-image: url("./submit-active.svg");
+  background-size: 40px 34px;
+  background-color: rgba(1, 1, 1, 0);
+
+  width: 40px;
+  height: 34px;
+  border: none;
+  outline: none;
+
+  cursor: pointer;
+}
+
+.submit:disabled {
+  background-image: url("./submit-disabled.svg");
+  cursor: default;
+}
+
+.chat-wrapper {
+  height: calc(100vh - 64px - 79px);
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 0 20px 30px;
+  overflow-y: scroll;
+}
+
+.message-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+
+.message-wrapper:first-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) and (min-height: 910px) {
+  .app {
+    height: 100vh;
+  }
+
+  .app__title {
+    font-size: 58px;
+    line-height: 91px;
+    padding: 66px 0 40px;
+  }
+
+  .app__content {
+    border: 1px solid #ededed;
+    border-radius: 37.5px;
+    padding: 0 40px 40px;
+  }
+  .form-wrapper,
+  .input-text {
+    border-radius: 32px;
+  }
+
+  .chat-wrapper {
+    padding: 0 0 30px;
+    height: calc(100vh - 197px - 200px);
+  }
+}
