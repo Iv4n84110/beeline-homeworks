@@ -1,0 +1,157 @@
+.navbar,
+.menu,
+.search {
+  display: flex;
+  box-sizing: border-box;
+}
+
+.navbar {
+  z-index: 2;
+  border-bottom: #a3a3a3 solid 1px;
+}
+
+.navbar__logo {
+  display: none;
+}
+
+.menu {
+  padding: 20px;
+  justify-content: space-between;
+  width: 145px;
+}
+
+.search__input:focus,
+.nav__button:focus {
+  outline: none;
+}
+
+.nav__button {
+  background-image: url("../img/BurgerMenu.svg");
+  background-size: 20px auto;
+  width: 20px;
+  height: 20px;
+  border: none;
+  box-sizing: border-box;
+}
+
+.nav__item {
+  position: relative;
+  padding: 0 5px;
+}
+
+.nav__item:first-child::before {
+  content: "";
+  position: absolute;
+  height: 4px;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.nav__item:not(:first-child) {
+  display: none;
+}
+
+.nav__item:first-child > .nav__link,
+.nav__item:not(:first-child) > .nav__link:hover,
+.search__input,
+.search__input::placeholder {
+  color: #ffffff;
+}
+
+.nav__item:not(:first-child) > .nav__link {
+  color: #9f9f9f;
+}
+
+.search {
+  width: auto;
+  padding-left: 30px;
+  border-left: #a3a3a3 solid 0.5px;
+}
+
+.search__form {
+  position: relative;
+}
+
+.search__input {
+  border: none;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.search__icon {
+  position: absolute;
+  background-image: url("../img/Shape.svg");
+  background-size: 10px auto;
+  width: 10px;
+  height: 10px;
+  left: -18px;
+  top: 7px;
+}
+
+@media (min-width: 560px) {
+  .menu {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 200px;
+  }
+
+  .nav__button {
+    background-size: 40px auto;
+    width: 40px;
+    height: 40px;
+  }
+
+  .search {
+    padding-left: 80px;
+  }
+
+  .search__input {
+    border: none;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .search__icon {
+    background-size: 20px auto;
+    width: 20px;
+    height: 20px;
+    top: 4px;
+    left: -40px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .navbar {
+    padding-left: 40px;
+  }
+
+  .navbar__logo {
+    display: inline-block;
+    width: 65px;
+    height: auto;
+  }
+
+  .menu {
+    width: 1000px;
+  }
+
+  .nav__button {
+    display: none;
+  }
+
+  .nav__item:first-child::before {
+    top: 54px;
+  }
+
+  .nav__item:not(:first-child) {
+    display: list-item;
+  }
+
+  .nav__list {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-evenly;
+  }
+}
