@@ -1,0 +1,134 @@
+@import "./header.css";
+@import "./content.css";
+@import "./sign-up.css";
+@import "./footer.css";
+
+body {
+  font-family: "Titillium Web", sans-serif;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+}
+
+.item {
+  list-style-type: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.text-size-s {
+  font-size: 15px;
+  line-height: 23px;
+}
+
+.text-size-m {
+  font-size: 17px;
+  line-height: 26px;
+}
+
+.button {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.button:focus {
+  outline: none;
+}
+
+.section {
+  position: relative;
+  background-image: url("../img/imgonline-com-ua-AutoEnrich-wfNWlP6gR9nvUW.png");
+  box-sizing: border-box;
+  height: 100vh;
+  max-height: 810px;
+  min-width: 320px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+
+.section:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.content {
+  margin: 0 auto;
+  max-width: 400px;
+  height: 100%;
+
+  color: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (orientation: landscape) and (max-width: 560px) {
+  .section {
+    min-height: 200vh;
+  }
+}
+
+@media (min-width: 560px) {
+  .section {
+    background-image: url("../img/motorcycle_enduro_cross-1440x810.png");
+    background-position: -180px;
+    height: 810px;
+  }
+
+  .content {
+    max-width: 600px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .section:after {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .text-size-s {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .text-size-m {
+    font-size: 24px;
+    line-height: 37px;
+  }
+}
+
+@media (min-width: 768px) {
+  .section {
+    background-position: 0px;
+  }
+
+  .content {
+    max-width: 600px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .content {
+    max-width: 900px;
+  }
+}
+
+  @media (min-width: 1440px) {
+    .content {
+      max-width: 1200px;
+    }
+}

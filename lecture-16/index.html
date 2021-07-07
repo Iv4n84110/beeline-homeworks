@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title></title>
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+  <section class="section">
+    <header class="header text-size-s">
+      <nav class="navbar">
+        <a class="navbar__logo" href="#">
+          <img src="./img/domo-kun-logo.png" alt="logo">
+        </a>
+        <div class="menu">
+          <button class="nav__button button"></button>
+          <ul class="nav__list list ">
+            <li class="nav__item item">
+              <a class="nav__link link" href="#">Models</a>
+            </li>
+            <li class="nav__item item">
+              <a class="nav__link link" href="#">Dimensions</a>
+            </li>
+            <li class="nav__item item">
+              <a class="nav__link link" href="#">Facts & Figures</a>
+            </li>
+            <li class="nav__item item">
+              <a class="nav__link link" href="#">History</a>
+            </li>
+            <li class="nav__item item">
+              <a class="nav__link link" href="#">Reviews</a>
+            </li>
+          </ul>
+        </div>
+        <div class="search">
+          <form action="" method="get" class="search__form">
+            <input type="search" name="Search-details" id="Search-details" placeholder="Search for details..."
+              class="search__input button">
+            <label for="Search-details" class="search__icon button"></label>
+          </form>
+        </div>
+      </nav>
+
+    </header>
+    <article class="container">
+      <div class="content">
+        <h1 class="content__title">Honda<br>Sport<br>CRF 450RX</h1>
+        <div class="button-group">
+          <div class="button-wrapper">
+            <button class="watch-button button"></button>
+            <span class="text-size-s">Watch film</span>
+          </div>
+          <div class="button-wrapper">
+            <button class="bookmark-button button"></button>
+            <span class="text-size-s">Bookmark for later</span>
+          </div>
+        </div>
+        <div class="description">
+          <div class="description__item">
+            <span class="text-size-s">Manufacturer</span>
+            <span class="text-size-m">Honda</span>
+          </div>
+          <div class="description__item">
+            <span class="text-size-s">Production</span>
+            <span class="text-size-m">2019</span>
+          </div>
+          <div class="description__item">
+            <span class="text-size-s">Engine</span>
+            <span class="text-size-m">0.45 L PGM-FI</span>
+          </div>
+          <div class="description__item">
+            <span class="text-size-s">Reviews</span>
+            <div class="rating">
+              <form class="stars">
+                <input type="radio" id="star-5" name="rating" value="5">
+                <label for="star-5"></label>
+                <input type="radio" id="star-4" name="rating" value="4" checked>
+                <label for="star-4"></label>
+                <input type="radio" id="star-3" name="rating" value="3">
+                <label for="star-3"></label>
+                <input type="radio" id="star-2" name="rating" value="2">
+                <label for="star-2"></label>
+                <input type="radio" id="star-1" name="rating" value="1">
+                <label for="star-1"></label>
+              </form>
+              <span class="text-size-m">4.0/5</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </article>
+  </section>
+  <section class="sign-up-wrapper">
+    <form action="./posturl/newsletter/" method="post" class="content">
+      <fieldset>
+        <div class="sign-up">
+          <p class="text-size-m">Sign up for our email newsletter and get the latest our company news.</p>
+          <p class="text-size-m">Get free trial for 3 month.</p>
+          <div class="sign-up-inner">
+            <input type="text" placeholder="Name" required  pattern="[A-Za-z]{2, 30}" maxlength="30" class="sign-up__input input-field">
+            <input type="email" placeholder="E-Mail" required class="sign-up__input input-field">
+            <input type="submit" class="sign-up__input input-submit" value="get started for free">
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="site-map">
+      <ul class="site-map__list list">
+        <li class="site-map__item item">
+          <a href="#" class="site-map__link text-size-m">Cars</a>
+        </li>
+        <li class="site-map__item item">
+          <a href="#" class="site-map__link text-size-m">Motorcycles</a>
+        </li>
+        <li class="site-map__item item">
+          <a href="#" class="site-map__link text-size-m">Engines</a>
+        </li>
+        <li class="site-map__item item">
+          <a href="#" class="site-map__link text-size-m">Water moto technolog</a>
+        </li>
+      </ul>
+    </div>
+    <div class="copyright">
+      <span class="text-size-m">© 2020, &lt;BeeInterns /&gt;</span>
+    </div>
+  </footer>
+</body>
+
+</html>
